@@ -2,14 +2,20 @@
   "clean_urls": true,
   "root": "_site/",
   "headers": {
-	"/img/**": {
-		"Cache-Control": "public, max-age=2592000"
+    "/*.ico": {
+      "Cache-Control": "public, max-age=2592000"
 	},
-	"/css/**": {
-		"Cache-Control": "public, max-age=2592000"
+    "/**.png": {
+      "Cache-Control": "public, max-age=2592000"
 	},
-	"/js/**": {
-		"Cache-Control": "public, max-age=2592000"
-	}
+    "/img/**": {
+      "Cache-Control": "public, max-age=2592000"
+	},
+    "/css/**": {
+      "Cache-Control": "public, max-age=2592000"
+    },
+    "/js/**": {
+      "Cache-Control": "public, max-age=2592000"
+    }
   }
 }
