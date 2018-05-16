@@ -10,6 +10,8 @@ url: https://spec.consortium.cash
 repo: https://github.com/bigearth/spec.consortium.cash
 img: img/logo.png
 lang: en-US
+google_analytics: UA-119304144-1
+
 sass:
     sass_dir: _includes/_sass
     style: compressed
@@ -23,7 +25,7 @@ defaults:
       path: "" # an empty string here means all files in the project
     values:
       # Page Variables
-      json_url: https://github.com/bitcoincashorg/bitcoincash.org/blob/master/spec/JSON-RPC.md 
+      json_url: https://github.com/bitcoincashorg/bitcoincash.org/blob/master/spec/JSON-RPC.md
       image: img/logo.png
       link_tweet: "Tweet to @TWITTERHANDLE"
       link_facebook: "Write on @FACEBOOKHANDLE's wall"
