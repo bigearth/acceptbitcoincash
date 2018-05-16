@@ -12,7 +12,7 @@ def error(msg)
   puts "  #{@output}. #{msg}"
 end
 
-# rubocop:disable AbcSize, MethodLength
+# rubocop:disable AbcSize
 def process_section(section, validator)
   section_file = "_data/#{section['id']}.yml"
   data = SafeYAML.load_file(File.join(__dir__, section_file))
@@ -22,11 +22,10 @@ def process_section(section, validator)
   # Check section alphabetization
   validate_alphabetical(calls, 'name', section_file)
 
-  calls.each do |call|
+  calls.each do
     @total_tracked += 1
   end
 end
-# rubocop:enable MethodLength
 
 def validate_data(validator, data, file, identifier, subset = nil)
   val = 2
